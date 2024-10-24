@@ -4,12 +4,6 @@ FROM node:slim
 # Set working directory dalam container
 WORKDIR /app
 
-# Menyalin package.json dan package-lock.json ke container
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install --production
-
 # Menyalin seluruh kode aplikasi ke container
 COPY . .
 
