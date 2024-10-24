@@ -13,9 +13,6 @@ RUN npm install --production
 # Menyalin seluruh kode aplikasi ke container
 COPY . .
 
-# Set environment variable (optional)
-ENV PORT=3000
-
 # Expose port aplikasi
 EXPOSE 3000
 
